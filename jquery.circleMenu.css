@@ -1,0 +1,144 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-size:14px;
+  color:#666;
+  font-family:Arial, Verdana, sans-serif;
+}
+
+div {
+  padding:100px;
+}
+
+
+
+
+.circleMenuWrap {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  margin:0;
+  padding:0;
+}
+
+.circleMenuWrap li,
+.circleMenuWrap strong,
+.circleMenuWrap .cM_target a {
+  list-style:none;
+  width:20px;
+  height:20px;
+  display:block;
+  background:url('images/circle.gif') no-repeat left top;
+}
+
+.circleMenuWrap .cM_target{
+  width:20px;
+}
+
+.circleMenuWrap .cM_target a {
+  text-indent:-9999px;
+  background: url('images/icon_1.png') no-repeat center center;
+  width:100%;
+}
+
+.circleMenuWrap a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  *display: inline;
+  outline:none;
+  padding:0;
+  text-decoration:none;
+  font-family:Arial, sans-serif;
+  font-size:12px;
+  color:#999;
+  width:20px;
+  height:20px;
+}
+
+.circleMenuWrap span {
+  visibility:hidden;
+  display:block;
+  width:90px;
+  position:relative;
+  margin-left:30px;
+}
+
+.circleMenuWrap a:hover span {
+  visibility:visible;
+}
+
+.CMItem_left  span{
+  left:-128px;
+  text-align:right;
+}
+
+.CMItem_right  span{
+ left:0px;
+ top:1px;
+}
+
+.CMItem_top  span{
+  text-align:center;
+  top:-18px;
+  left:-64px;
+}
+
+.CMItem_bottom  span{
+  text-align:center;
+  bottom:-23px;
+  left:-64px;
+}
+
+.CMItem_topleft span{
+  left:-128px;
+  top:-8px;
+  text-align:right;
+}
+
+.CMItem_bottomleft span{
+  left:-128px;
+  bottom:-10px;
+  text-align:right;
+}
+
+.CMItem_topright span{
+  left:0px;
+  top:-8px;
+}
+
+.CMItem_bottomright span{
+  left:0px;
+  bottom:-8px;
+}
+
+
+.play a,
+.like a, 
+.mail a,
+.rate a{
+  background-repeat: no-repeat !important;
+  background-position:3px 2px !important;
+}
+
+.play a{
+  background-image:url('images/icon_2.png')!important;
+}
+
+.like a{
+  background-image:url('images/icon_3.png')!important;
+}
+
+.mail a{
+  background-image:url('images/icon_4.png')!important;
+}
+
+.rate a{
+  background-image:url('images/icon_5.png')!important;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>index</title>
+	
+</head>
+  
+  <link rel="stylesheet" href="jquery.circleMenu.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  
+<body>
+
+<div>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et erat nec risus ornare aliquet. Morbi sit amet erat nibh, id sodales arcu. Mauris et libero ac odio mollis pellentesque. Nulla libero diam, accumsan at posuere sit amet, ultricies sed velit. Praesent massa tortor, ultricies in elementum eu, 
+  <span class="inline-example">
+    <strong class="play">
+      <a href="#"><span>play video</span></a>
+    </strong>
+    <strong class="like">
+      <a href="#"><span>add to favorites</span></a>
+    </strong>
+    <strong class="mail">
+      <a href="#"><span>action</span></a>
+    </strong>
+    <strong class="rate">
+      <a href="#"><span>action</span></a>
+    </strong>
+  </span>congue id nisi. Morbi varius odio sed nisl egestas volutpat. Morbi consectetur, nulla feugiat tempor tincidunt, tellus enim pulvinar orci, sit amet scelerisque ipsum magna non elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+  <span class="inline-example">
+    <strong class="play">
+      <a href="#"><span>play video</span></a>
+    </strong>
+    <strong class="like">
+      <a href="#"><span>add to favorites</span></a>
+    </strong>
+    <strong class="mail">
+      <a href="#"><span>action</span></a>
+    </strong>
+    <strong class="rate">
+      <a href="#"><span>action</span></a>
+    </strong>
+  </span>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et erat nec risus ornare aliquet. Morbi sit amet erat nibh, id sodales arcu. Mauris et libero ac odio mollis pellentesque. Nulla libero diam, accumsan at posuere sit amet, ultricies sed velit. Praesent massa tortor, ultricies in elementum eu, congue id nisi. Morbi varius odio sed nisl egestas volutpat. Morbi consectetur, nulla feugiat
+   <span class="inline-example">
+     <strong class="play">
+       <a href="#"><span>play video</span></a>
+     </strong>
+     <strong class="like">
+       <a href="#"><span>add to favorites</span></a>
+     </strong>
+     <strong class="mail">
+       <a href="#"><span>action</span></a>
+     </strong>
+     <strong class="rate">
+       <a href="#"><span>action</span></a>
+     </strong>
+   </span> tempor tincidunt, tellus enim pulvinar orci, sit amet scelerisque ipsum magna non elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+</p>
+</div>
+
+
+<div>
+
+<ul>
+  <li class="play">
+     <a href="#"><span>play video</span></a>
+   </li>
+   <li class="like">
+     <a href="#"><span>add to favorites</span></a>
+   </li>
+   <li class="mail">
+     <a href="#"><span>action</span></a>
+   </li>
+</ul>
+
+
+</div>
+
+<div>
+
+<ul>
+  <li class="play">
+     <a href="#"><span>play video</span></a>
+   </li>
+   <li class="like">
+     <a href="#"><span>add to favorites</span></a>
+   </li>
+   <li class="mail">
+     <a href="#"><span>action</span></a>
+   </li>
+   <li class="rate">
+     <a href="#"><span>action</span></a>
+   </li>
+   <li class="play">
+      <a href="#"><span>play video</span></a>
+    </li>
+    <li class="like">
+      <a href="#"><span>add to favorites</span></a>
+    </li>
+
+</ul>
+
+
+</div>
+
+<div>
+
+<ul>
+  <li class="play">
+      <a href="#"><span>play video</span></a>
+    </li>
+    <li class="like">
+      <a href="#"><span>add to favorites</span></a>
+    </li>
+    <li class="mail">
+      <a href="#"><span>action</span></a>
+    </li>
+    <li class="rate">
+      <a href="#"><span>action</span></a>
+    </li>
+    <li class="play">
+        <a href="#"><span>play video</span></a>
+      </li>
+      <li class="like">
+        <a href="#"><span>add to favorites</span></a>
+      </li>
+      <li class="mail">
+        <a href="#"><span>action</span></a>
+      </li>
+      <li class="rate">
+        <a href="#"><span>action</span></a>
+      </li>
+      <li class="play">
+          <a href="#"><span>play video</span></a>
+        </li>
+        <li class="like">
+          <a href="#"><span>add to favorites</span></a>
+        </li>
+        <li class="mail">
+          <a href="#"><span>action</span></a>
+        </li>
+        <li class="rate">
+          <a href="#"><span>action</span></a>
+        </li>
+</ul>
+
+
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="jquery.circleMenu.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    
+    $('ul').circleMenu();
+    
+    $('.inline-example').circleMenu({
+          item : 'strong',
+          onExpand : function(wrap, items){
+            wrap.animate({'margin' : '150px'}, 400);
+          },
+          onCollapse : function(wrap, items){
+             wrap.animate({'margin' : '0'}, 400);
+          }
+        });
+        
+  })
+</script>
+</body>
+</html>
